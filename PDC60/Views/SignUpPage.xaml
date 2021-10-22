@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC60.Views.SignUpPage">
+    <Grid>
+
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="150" BackgroundColor="HotPink" Padding="0" Margin="0">
+                <Image Source="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg" Aspect="AspectFill" Margin="0"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0">
+
+                <StackLayout>
+
+
+                    <StackLayout Margin="10">
+                        <Label Text="SIGN UP" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="15,10">
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Entry Placeholder="Enter Email" x:Name="EmailInput" TextColor="Olive" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                    <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Entry Placeholder="Enter Password" x:Name="Password" IsPassword="True" TextColor="Olive" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                <Entry Placeholder="Confirm Password" IsPassword="True" TextColor="Olive" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Button Text="SIGN UP" BackgroundColor="DarkGreen" TextColor="White" CornerRadius="30" Clicked="SignUpClicked"/>
+
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

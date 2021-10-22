@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "868701545704",
+    "firebase_url": "https://pdc60final-default-rtdb.firebaseio.com",
+    "project_id": "pdc60final",
+    "storage_bucket": "pdc60final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868701545704:android:ab996c0b027b1bde8f155d",
+        "android_client_info": {
+          "package_name": "com.companyname.pdc60"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868701545704-1eo3f7m91du2ef6nt0v18pg0ihlec271.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlgt_GNc040sWIOeXL3m2z-A9eYJsCA5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868701545704-1eo3f7m91du2ef6nt0v18pg0ihlec271.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

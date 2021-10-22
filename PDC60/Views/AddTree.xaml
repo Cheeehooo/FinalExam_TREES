@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC60.Views.AddTree">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save Tree Info" x:Name="btnSaveUpdate" Command="{Binding AddTree}" Clicked="ToView" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Id}"                     Placeholder="Enter Id" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+            <Editor Text="{Binding TreeCode}"              Placeholder="Enter TreeCode..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+            <Entry Text="{Binding Name}"                   Placeholder="Name" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+            <Editor Text="{Binding InitialIdentification}" Placeholder="Enter Identification..." AutoSize="TextChanges" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+            <Editor Text="{Binding Notes}"                 Placeholder="Notes..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+            <Entry Text="{Binding GPSCoordinates}"         x:Name="resultLocation" TextColor="WhiteSmoke" BackgroundColor="OliveDrab"  />
+            <Entry Text="{Binding Location}"               Placeholder="Enter Location" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White" />
+            <Entry Text="{Binding Landmark}"               Placeholder="Enter Landmark" TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+            <Entry Text="{Binding Height}"                 Placeholder="Enter Height..."  TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+            <Entry Text="{Binding Canopy}"                 Placeholder="Enter Canopy..." TextColor="WhiteSmoke" BackgroundColor="OliveDrab" PlaceholderColor="White"/>
+
+            <StackLayout>
+                <Label Text="Geolocator" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                       FontSize="Title" FontAttributes="Bold"/>
+
+                <Button Text="Geolocation" Clicked="Button_Clicked"/>
+                <Button Text="Stop Locating" Clicked="Button_Stop"/>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
